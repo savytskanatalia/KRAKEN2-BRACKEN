@@ -24,7 +24,7 @@ RUN cd /opt/bracken/src/ ; make
 
 
 RUN cd tmp ; wget https://github.com/DerrickWood/kraken2/archive/master.zip
-RUN cd tmp ; unzip kraken2-master.zip  
+RUN cd tmp ; unzip master.zip  
 RUN mkdir -p /opt/kraken2 
 RUN cd tmp/kraken2-master ; ./install_kraken2.sh /opt/kraken2 
 RUN ln -s /opt/kraken2/kraken2 /usr/local/bin/kraken2 
